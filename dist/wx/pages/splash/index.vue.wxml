@@ -1,0 +1,9 @@
+<template name="4558d20a">
+  <view class="_div data-v-ca199b0e container">
+    <swiper class="_swiper data-v-ca199b0e splash" indicator-dots>
+      <swiper-item class="_swiper-item data-v-ca199b0e sw-item" wx:key="index" key="{{index}}" wx:for="{{movies}}" wx:for-index="index" wx:for-item="item">
+        <image src="{{item.image}}" class="_image data-v-ca199b0e slide-image" mode="aspectFill"></image> <button class="_button data-v-ca199b0e start" wx:if="{{index == count-1}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">立刻体验</button>
+      </swiper-item>
+    </swiper>
+  </view>
+</template>

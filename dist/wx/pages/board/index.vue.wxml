@@ -1,0 +1,20 @@
+<template name="0698886e">
+  <view class="_div data-v-341725ea container">
+    <view class="_div data-v-341725ea slide">
+      <swiper class="_swiper data-v-341725ea swp" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{1000}}" duration="{{100}}" circular="{{true}}">
+        <swiper-item wx:key="item.id" key="{{item.id}}" wx:for="{{banner.content}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-341725ea">
+          <navigator url="{{'../item/main?id'+item.id}}" class="_navigator data-v-341725ea">
+            <image class="_image data-v-341725ea nav-img" src="{{item.image}}" mode="aspectFill"></image>
+          </navigator>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="_div data-v-341725ea board" scroll-y="{{true}}">
+      <navigator wx:key="item.key" key="{{item.key}}" url="{{'../list/main?key='+item.key+'&title='+item.title}}" wx:for="{{list}}" wx:for-index="index" wx:for-item="item" class="_navigator data-v-341725ea">
+        <view class="_div data-v-341725ea board-item"><text class="_text data-v-341725ea board-item-title">{{item.title}}</text>
+          <image class="_image data-v-341725ea arrow" src="/static/images/arrowright.png" mode="aspectFill"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</template>

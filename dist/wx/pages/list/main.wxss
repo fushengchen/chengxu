@@ -1,0 +1,13 @@
+@import "../../common/vendor.wxss";
+
+.container.data-v-b6e2bca0 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.list.data-v-b6e2bca0 {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
